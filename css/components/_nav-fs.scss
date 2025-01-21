@@ -1,0 +1,222 @@
+//logo-stytle
+.logo-fw {
+    color: rgb(45, 141, 148) !important;
+    font-size: 2rem !important;
+}
+
+@media screen and (max-width: 630px) {
+    .logo-fw {
+        font-size: 1.45rem !important;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .logo-fw {
+        font-size: 1.2rem !important;
+    }
+}
+
+.navbar-border {
+    border-top-color: #02c39a !important;
+    border-top: .8rem solid;
+    z-index: 500;
+}
+
+
+
+
+
+
+
+/* Styling Our Menu */
+#menu {
+    position: fixed;
+    top: 85px;
+    left: 5px;
+    height: 0px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #000;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+
+}
+
+#menu li:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+    padding: 9px 18px;
+    display: block;
+}
+
+
+//首頁
+#menu .bg-index:hover,
+#menu .bg-index.active,
+#menu .bg-index.active:hover {
+    background: rgba(255, 242, 204, 1);
+}
+
+#menu .bg-index.active a,
+#menu .bg-index.active:hover a:hover {
+    color: #b65302;
+}
+
+
+//物理
+#menu .bg-phy:hover,
+#menu .bg-phy.active,
+#menu .bg-phy.active:hover {
+    background: rgb(188, 212, 253);
+
+}
+
+#menu .bg-phy.active a,
+#menu .bg-phy.active:hover a:hover {
+    color: #1832a5;
+}
+
+
+//生物
+#menu .bg-bio:hover,
+#menu .bg-bio.active,
+#menu .bg-bio.active:hover {
+    background: rgba(226, 240, 217, 1);
+}
+
+#menu .bg-bio.active a,
+#menu .bg-bio.active:hover a:hover {
+    color: #187a39;
+}
+
+
+//水質
+#menu .bg-chem:hover,
+#menu .bg-chem.active,
+#menu .bg-chem.active:hover {
+    background: rgba(251, 229, 214, 1);
+}
+
+#menu .bg-chem.active a,
+#menu .bg-chem.active:hover a:hover {
+    color: #e7551b;
+}
+
+
+//環境營造
+#menu .bg-com:hover,
+#menu .bg-com.active,
+#menu .bg-com.active:hover {
+    background: rgba(204, 204, 255, 1);
+}
+
+#menu .bg-com.active a,
+#menu .bg-com.active:hover a:hover {
+    color: #7a0cad;
+}
+
+//聯絡資訊
+#menu .bg-comifo:hover,
+#menu .bg-comifo.active,
+#menu .bg-comifo.active:hover {
+    background: rgba(255, 242, 204, 1);
+}
+
+#menu .bg-comifo.active a,
+#menu .bg-comifo.active:hover a:hover {
+    color: #b65302;
+}
+
+
+
+//選單消失
+@media screen and (min-width: 992px) {
+    .navbar .navbar-collapse {
+        display: none !important;
+
+    }
+}
+
+
+//選單顏色
+.burger-color {
+    color: #02c39a;
+
+}
+
+
+//首頁圖片
+.index-bg-image {
+    background-image: url(/images/background.png);
+    background-size: cover;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+}
+
+.index-bg-liner {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgb(255, 255, 255, 0.8));
+    width: 100%;
+
+}
+
+
+
+
+//文字外框
+.strokeme {
+
+    text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, 2px 2px 0 #ffffff;
+}
+
+
+
+//contact 圖片
+.contact-bg-image {
+    background-image: url(/images/background.png);
+    background-size: contain;
+    width: 100%;
+    height: 70vh;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-bg-liner {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgb(255, 255, 255, 0.4));
+    width: 100%;
+    height: 70vh;
+}
+
+@include media-breakpoint-down(md) {
+    .contact-bg-image {
+        background-attachment: scroll;
+        background-size: cover;
+
+    }
+}
+
+
+//lg視窗-fullpage-padding-top
+@include media-breakpoint-down(lg) {
+    .section {
+        padding-top: 83px !important;
+    }
+}
