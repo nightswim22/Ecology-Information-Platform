@@ -23072,7 +23072,7 @@ body {
 }
 
 .contact-bg-liner {
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
   width: 100%;
   height: 70vh;
 }
